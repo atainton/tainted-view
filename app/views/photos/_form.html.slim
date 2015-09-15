@@ -1,0 +1,5 @@
+= simple_form_for @photo, html: { multipart: true }  do |f|
+	= f.input :name
+	= f.input :image
+	= f.input :is_active
+	= f.button :submit, class: 'btn'

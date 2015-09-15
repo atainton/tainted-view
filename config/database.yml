@@ -1,0 +1,40 @@
+development:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: tainted_view_development
+  pool: 5
+  username: root
+  password: root
+  host: localhost
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+test:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: tainted_view_test
+  pool: 5
+  username: root
+  password: root
+  host: localhost
+
+# staging:
+#  adapter: mysql2
+#  encoding: utf8
+#  host: 10.0.0.16
+#  database: gs_marketing
+#  port: 3306
+#  username: getsmart_testing
+#  password: 8nw346653n06cDC
+
+# production:
+#  adapter: mysql2
+#  encoding: utf8
+#  host: database.getsmarter.co.za
+#  database: gs_marketing
+#  port: 3306
+#  username: gs_mar_live
+#  password: gsmar546RTj76912awe

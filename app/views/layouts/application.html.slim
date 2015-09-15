@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    meta[name="viewport" content="width=device-width, initial-scale=1.0"]
+    title
+      = content_for?(:title) ? yield(:title) : 'Phoenix'
+    meta name="description" content="#{content_for?(:description) ? yield(:description) : 'Phoenix'}"
+    = stylesheet_link_tag "application", :media => 'all'
+    = javascript_include_tag 'application'
+    = csrf_meta_tags
+    link href="http://fonts.googleapis.com/css?family=Buenard:700" rel="stylesheet" type="text/css" /
+    script src="http://pupunzi.com/mb.components/mb.YTPlayer/demo/inc/jquery.mb.YTPlayer.js" 
+
+
+  body
+  	header
+      = render 'layouts/navigation'
+    .container
+      .row
+        .span9 = yield
